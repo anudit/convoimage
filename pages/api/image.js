@@ -3,23 +3,22 @@ import { createImage } from '/lib/image-creator';
 export default async function handler(req, res) {
 
     let imageDescription = {};
-
-    if(Object.keys(req.body).includes('title') === true){
-        imageDescription['title'] = req.body['title'];
+    if(Object.keys(req.query).includes('title') === true){
+        imageDescription['title'] = req.query['title'];
     }
     else {
         imageDescription['title'] = '';
     }
 
-    if(Object.keys(req.body).includes('title') === true){
-        imageDescription['author'] = req.body['author'];
+    if(Object.keys(req.query).includes('title') === true){
+        imageDescription['author'] = req.query['author'];
     }
     else {
         imageDescription['author'] = '';
     }
 
-    if(Object.keys(req.body).includes('creation_time') === true){
-        imageDescription['creation_time'] = req.body['creation_time'];
+    if(Object.keys(req.query).includes('creation_time') === true){
+        imageDescription['creation_time'] = req.query['creation_time'];
     }
     else {
         imageDescription['creation_time'] = '';
