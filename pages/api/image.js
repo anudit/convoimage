@@ -4,7 +4,7 @@ export default async function handler(req, res) {
 
     let imageDescription = {};
     if(Object.keys(req.query).includes('title') === true){
-        imageDescription['title'] = req.query['title'];
+        imageDescription['title'] = decodeURIComponent(req.query['title']);
     }
     else {
         imageDescription['title'] = '';
@@ -18,7 +18,7 @@ export default async function handler(req, res) {
     }
 
     if(Object.keys(req.query).includes('creation_time') === true){
-        imageDescription['creation_time'] = req.query['creation_time'];
+        imageDescription['creation_time'] = decodeURIComponent(req.query['creation_time']);
     }
     else {
         imageDescription['creation_time'] = '';
