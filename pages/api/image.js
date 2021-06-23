@@ -39,5 +39,6 @@ export default async function handler(req, res) {
     console.log("Call took " + (t1 - t0) + " milliseconds.")
 
     res.setHeader('Content-Type', 'image/jpg');
+    res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
     res.send(imageBuffer);
 }
