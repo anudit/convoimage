@@ -9,15 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@dicebear/avatars": "^4.6.4",
-    "@dicebear/micah": "^4.6.4",
-    "next": "11.0.0",
-    "puppeteer": "^10.0.0",
+    "@dicebear/avatars": "^4.6.8",
+    "@dicebear/micah": "^4.6.8",
+    "next": "11.0.1",
+    "puppeteer-serverless": "^2.0.0",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
     "eslint": "7.29.0",
-    "eslint-config-next": "11.0.0"
+    "eslint-config-next": "11.0.1"
   }
 }
