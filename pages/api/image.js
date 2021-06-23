@@ -31,7 +31,13 @@ export default async function handler(req, res) {
     //     creation_time: "8:00 AM • Jun 16, 2021"
     // }
 
+    var t0 = Date.now()
+
     let imageBuffer = await createImage(imageDescription);
+
+    var t1 = Date.now()
+    console.log("Call took " + (t1 - t0) + " milliseconds.")
+
     res.setHeader('Content-Type', 'image/jpg');
     res.send(imageBuffer);
 }
