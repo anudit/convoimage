@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@dicebear/avatars": "^4.6.8",
-    "@dicebear/micah": "^4.6.8",
+    "@dicebear/avatars": "^4.6.9",
+    "@dicebear/micah": "^4.6.9",
     "chrome-aws-lambda": "^10.0.0",
     "next": "11.0.1",
     "puppeteer-core": "^10.0.0",

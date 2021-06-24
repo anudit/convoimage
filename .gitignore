@@ -33,4 +33,9 @@ yarn-error.log*
 # vercel
 .vercel
 
-.vercel
+CrashpadMetrics-active.pma
+CrashpadMetrics.pma
+DevToolsActivePort
+Local State
+Crashpad
+Default
